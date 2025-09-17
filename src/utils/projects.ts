@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: 'Uptape',
     description:
       'Helped the development and maintennance of Uptape , Comprehensive Lead Management Sytem for dealerships',
-    tech: ['Angular', 'NGRX', 'Material UI', 'RxJS'],
+    tech: ['Angular', 'NGRX', 'Material UI', 'RxJS', 'Cypress', 'StoryBook'],
     link: 'https://uptape.com/',
     image: '/uptape.png',
   },
