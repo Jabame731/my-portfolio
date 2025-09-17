@@ -28,7 +28,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/justine-taglucop-391005238/"
             target="_blank"
             rel="noreferrer"
             className="flex flex-col items-center"
