@@ -1,0 +1,82 @@
+import {
+  ButtonColor,
+  ButtonColors,
+  ButtonStyle,
+  ButtonStyles,
+  ButtonType,
+} from '@/models/Button.model';
+import { ReactNode } from 'react';
+import cn from 'classnames';
+import { AnimationSpeeds } from '@/consts';
+import * as motion from 'motion/react-client';
+import Link from 'next/link';
+
+interface ButtonProps {
+  type: ButtonType;
+  children: ReactNode;
+  color?: ButtonColor;
+  onClick?: () => void;
+  href?: string;
+  design?: ButtonStyle;
+  download?: string;
+}
+
+const Button = ({
+  color = ButtonColors.default,
+  type,
+  design = ButtonStyles.solid,
+  children,
+  href,
+  download,
+  onClick,
+}: ButtonProps) => {
+  const className = cn(
+    'btn',
+    { 'btn-primary': color === ButtonColors.primary },
+    { 'btn-secondary': color === ButtonColors.secondary },
+    { 'btn-accent': color === ButtonColors.accent },
+    { 'btn-outline': design === ButtonStyles.outline }
+  );
+
+  const whileHover = {
+    scale: 1.05,
+    transition: { duration: AnimationSpeeds.fast },
+  };
+
+  const whileTap = {
+    scale: 0.9,
+    transition: { duration: AnimationSpeeds.fast },
+  };
+
+  if (href) {
+    return (
+      <motion.div
+        whileHover={whileHover}
+        whileTap={whileTap}
+        className={className}
+      >
+        <Link
+          href={href}
+          target={href.startsWith('http') || !!download ? '_blank' : '_self'}
+          download={download}
+        >
+          {children}
+        </Link>
+      </motion.div>
+    );
+  }
+
+  return (
+    <motion.button
+      whileHover={whileHover}
+      whileTap={whileTap}
+      className={className}
+      type={type}
+      onClick={onClick}
+    >
+      {children}
+    </motion.button>
+  );
+};
+
+export default Button;
