@@ -3,14 +3,15 @@ import cn from 'classnames';
 
 const TechStack = () => {
   const logos: { path: string; alt: string; pathDark?: string }[] = [
-    { path: 'angular.svg', alt: 'Angular' },
     { path: 'react.svg', alt: 'React' },
     { path: 'nextjs-13.svg', alt: 'NextJS', pathDark: 'nextjs-13-dark.svg' },
+    { path: 'angular.svg', alt: 'Angular' },
     { path: 'redux.svg', alt: 'Redux' },
+    { path: 'ngrx.svg', alt: 'NgRx' },
     { path: 'rxjs.svg', alt: 'Rxjs' },
     { path: 'html.svg', alt: 'HTML' },
     { path: 'sass.svg', alt: 'Sass' },
-    { path: 'vercel.svg', alt: 'Vercel', pathDark: 'vercel-dark.svg' },
+    { path: 'express.png', alt: 'ExpressJs', pathDark: 'express-dark.png' },
   ];
 
   return (
