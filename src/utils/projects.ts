@@ -31,7 +31,7 @@ export const projects: Project[] = [
     title: 'Smart Parking System',
     description:
       'A capstone project that delivers a real-time smart parking solution, enabling efficient monitoring and management of parking spaces using Server-Sent Events (SSE) for live slot updates.',
-    tech: ['React', 'Express.js', 'MySQL', 'Cypress'],
+    tech: ['Angular', 'Express.js', 'MySQL', 'Cypress', 'NGRX', 'RxJS', 'Angular Material'],
     link: 'https://parking-system-reservation-zmel.vercel.app/auth',
     github: 'https://github.com/Jabame731/parking-system-reservation',
     image: '/parking-image.png',
