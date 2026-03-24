@@ -32,6 +32,8 @@ export const projects: Project[] = [
     description:
       'A capstone project that provides a smart solution for monitoring and managing parking spaces in real time',
     tech: ['React', 'Express.js', 'MySQL', 'Cypress'],
-    github: 'https://github.com/Jabame731/capstone_project',
+    link: 'https://parking-system-reservation-zmel.vercel.app/auth',
+    github: 'https://github.com/Jabame731/parking-system-reservation',
+    image: '/parking-image.png',
   },
 ];
