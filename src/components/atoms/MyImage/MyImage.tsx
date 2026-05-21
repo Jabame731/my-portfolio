@@ -6,9 +6,9 @@ const MyImage = () => {
     <div className="relative overflow-hidden pr-12 pb-12">
       <Image
         className="relative z-1 rounden-lg"
-        src="/guypc.jpg"
+        src="/justine-grad-pic.jpg"
         alt="me"
-        width={600}
+        width={700}
         height={600}
         sizes="(max-width: 768px) 100vw, 33vw"
       />
