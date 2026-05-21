@@ -13,7 +13,7 @@ const CtxButtons = () => {
         Projects
       </Button>
       <Button
-        href="/resume/JustineResume.pdf"
+        href="/resume/Justine-Taglucop.pdf"
         type={ButtonTypes.button}
         download="Justine Taglucop Resume"
         design={ButtonStyles.outline}

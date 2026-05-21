@@ -2,13 +2,13 @@ import { Project } from '@/models/Project.model';
 
 export const projects: Project[] = [
   {
-    title: 'Aldenaire Fashion Store',
+    title: 'Naga Steel Depot ',
     description:
-      'Online fashion store with an admin dashboard that lets you manage products, track orders, and monitor sales performance.',
+      'A role-based e-commerce platform for managing and purchasing steel and construction materials online.',
     tech: ['NextJS', 'Tailwindcss', 'ShadCN', 'Prisma'],
-    link: 'https://e-commerce-website-sable-eight.vercel.app/',
-    github: 'https://github.com/Jabame731/e-commerce-website',
-    image: '/aldenaire.png',
+    link: 'https://naga-steel-depots.vercel.app/',
+    github: 'https://github.com/Owl-Development-Solutions/naga-steel-depots',
+    image: '/naga-steel-depot.png',
   },
   {
     title: 'Hoobank Landing Page',
